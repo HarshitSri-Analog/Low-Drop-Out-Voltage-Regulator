@@ -31,6 +31,8 @@ Voltage regulators are widely used in:
 - **Medical Devices**: Ensuring consistent operation of life-critical systems.
 - **Telecommunication**: Powering networking equipment like routers and base stations.
 
+***Need of an LDO Regulator**: Lets understand this with an example, For suppose you have a Mobile Phone whose battery is fully charged i.e. 100% (say, 5V). Now at the end of the day us being us, we have our mobile phones at 5% (say, 2.3V), but but but... in our devices we have hundreds of different components and each one needs a specific constant voltage (For eg: processor needs 0.5V, display needs 1.2V etc.). Thus for a varying battery input of 5V to 2.3V our components have a demand of a constant/fixed voltage and this demand is fulfulled by our LDO regulators or some other circuits working on the concept of LDO regulator.*
+
 LDOs are particularly advantageous in low-noise, compact, and energy-sensitive applications due to their simplicity and high-performance characteristics.
 
 ## PMOS LDO v/s NMOS LDO
