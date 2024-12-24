@@ -6,13 +6,14 @@ This repository contains the design and simulation of a **Low Dropout Voltage Re
 - [Introduction](#introduction)
 - [What is a Voltage Regulator?](#what-is-a-voltage-regulator)
   - [Applications and Use Cases](#applications-and-use-cases)
-- [PMOS LDO v/s NMOS LDO](#pmos-ldo-v/s-nmos-ldo)
+- [PMOS LDO vs. NMOS LDO](#pmos-ldo-vs-nmos-ldo)
   - [PMOS LDO](#pmos-ldo)
   - [NMOS LDO](#nmos-ldo)
   - [Main Issue with NMOS LDO](#main-issue-with-nmos-ldo)
+- [Amplifier in LDO Circuit](#amplifier-in-ldo-circuit)
+  - [Specifications](#specifications)
+  - [Advantages of Balanced Amplifier](#advantages-of-balanced-amplifier)
 - [Design Specifications](#design-specifications)
-  - [Given Specifications](#given-specifications)
-  - [Achieved Specifications](#achieved-specifications)
 - [Acknowledgements](#acknowledgements)
 
 ## Introduction
@@ -53,6 +54,19 @@ The primary drawback of NMOS LDOs is the need for a higher gate drive voltage, w
 - **Increased Dropout Voltage**: The NMOS pass element requires a larger voltage overhead, making it less efficient in low-dropout scenarios.
 - **Complex Gate Drive Circuitry**: Requires additional components like charge pumps, leading to higher design complexity and power consumption.
 
+## Amplifier in LDO Circuit
+The amplifier used in this LDO design is not a conventional operational amplifier but a **balanced amplifier**, which provides superior performance for this application.
+
+### Specifications
+- **High Gain**: Ensures accurate regulation of the output voltage.
+- **Wide Unity Gain Bandwidth (UGB)**: Facilitates faster response to load and line variations.
+- **Phase Margin**: Designed to ensure stability under all operating conditions.
+
+### Advantages of Balanced Amplifier
+- **Enhanced Stability**: Achieves a better phase margin, minimizing the risk of oscillations.
+- **High Precision**: Maintains tight control over the output voltage despite variations in input voltage or load.
+- **Reduced Noise**: Balanced design helps in achieving low output voltage ripple, suitable for sensitive applications.
+
 ## Design Specifications
 
 | **Specification**              | **Given**            | **Achieved**         |
@@ -68,7 +82,8 @@ The primary drawback of NMOS LDOs is the need for a higher gate drive voltage, w
 | Output Voltage Range (Iload Var)| -                   | 2.17mV             |
 
 ## Acknowledgements
-I would like to express my gratitude to my mentors and colleagues for their guidance and support throughout this project. Special thanks to the design and simulation community for providing invaluable resources and insights into CMOS LDO development.
+Special thanks to [Cadence Virtuoso](https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/virtuoso-studio.html) team for providing an advanced platform for analog design & simulation. Additionally, gratitude is extended to [Analog Layout & Design](https://youtube.com/@analoglayoutdesign2342?si=MGVNuvAb5QREWzpp) channel for providing such an informative series on [Designing LDO Regulator Circuit](https://youtu.be/kuY9KpJeZW0?si=XeTRorBCeDtmaaFk). 
 
----
-This repository serves as a learning and reference resource for anyone interested in LDO design and simulation. Contributions and feedback are welcome!
+Feel free to explore the repository for insights into the design and implementation of LDO Volateg Regulator. Contributions and feedback are welcome!
+
+***If you find this repository helpful, please consider giving it a ⭐!***
