@@ -97,7 +97,7 @@ This amplifier's performance significantly contributes to the accuracy and stabi
 | Output Voltage Range (Iload Var)| -                   | 2.17mV             |
 
 ## Acknowledgements
-Special thanks to [Cadence Virtuoso](https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/virtuoso-studio.html) team for providing an advanced platform for analog design & simulation. Additionally, gratitude is extended to [Analog Layout & Design](https://youtube.com/@analoglayoutdesign2342?si=MGVNuvAb5QREWzpp) channel for providing such an informative series on [Designing LDO Regulator Circuit](https://youtu.be/kuY9KpJeZW0?si=XeTRorBCeDtmaaFk). 
+Special thanks to [Cadence Virtuoso](https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/virtuoso-studio.html) team for providing an advanced platform for analog design & simulation. Additionally, gratitude is extended to [Analog Layout & Design](https://youtube.com/@analoglayoutdesign2342?si=MGVNuvAb5QREWzpp) channel for providing such an informative lecture on [Designing LDO Regulator Circuit](https://youtu.be/kuY9KpJeZW0?si=XeTRorBCeDtmaaFk). 
 
 Feel free to explore the repository for insights into the design and implementation of LDO Volateg Regulator. Contributions and feedback are welcome!
 
