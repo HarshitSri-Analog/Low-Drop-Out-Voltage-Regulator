@@ -35,6 +35,10 @@ Voltage regulators are widely used in:
 
 LDOs are particularly advantageous in low-noise, compact, and energy-sensitive applications due to their simplicity and high-performance characteristics.
 
+| ![Need of LDO]() | 
+| :---: | 
+| Fig 1: Need of LDO Voltage Regulator |
+
 ## PMOS LDO v/s NMOS LDO
 
 ### PMOS LDO
@@ -47,14 +51,14 @@ In a PMOS-based LDO regulator, a PMOS transistor serves as the pass element. The
 
 | ![PMOS LDO](https://github.com/HarshitSri-Analog/Low-Drop-Out-Voltage-Regulator/blob/main/Schematics%20%26%20Simulation/PMOS%20LDO%20ckt.png) | 
 | :---: | 
-| Fig 1: PMOS-LDO Regulator |
+| Fig 2: PMOS-LDO Regulator |
 
 ### NMOS LDO
 An NMOS-based LDO regulator uses an NMOS transistor as the pass element. However, unlike the PMOS design, NMOS transistors require a higher gate drive voltage to maintain conduction. This often necessitates the use of a charge pump or an additional circuit to boost the gate voltage, increasing complexity and power consumption.
 
 | ![NMOS LDO](https://github.com/HarshitSri-Analog/Low-Drop-Out-Voltage-Regulator/blob/main/Schematics%20%26%20Simulation/images.jpeg) | 
 | :---: | 
-| Fig 2: NMOS-LDO Regulator |
+| Fig 3: NMOS-LDO Regulator |
 
 #### Main Issue with NMOS LDO
 The primary drawback of NMOS LDOs is the need for a higher gate drive voltage, which can result in:
