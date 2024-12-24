@@ -41,7 +41,7 @@ In a PMOS-based LDO regulator, a PMOS transistor serves as the pass element. The
 - **Simpler Control Circuitry**: Easier to design compared to NMOS-based counterparts.
 - **Power Efficiency**: Ideal for low-power applications.
 
-| ![PMOS LDO]() | 
+| ![PMOS LDO](https://github.com/HarshitSri-Analog/Low-Drop-Out-Voltage-Regulator/blob/main/Schematics%20%26%20Simulation/PMOS%20LDO%20ckt.png) | 
 | :---: | 
 | Fig 1: PMOS-LDO Regulator |
 
@@ -60,8 +60,8 @@ The primary drawback of NMOS LDOs is the need for a higher gate drive voltage, w
 | Output Voltage (Vout)          | 1.8V                | 1.807V              |
 | Input Voltage (Vdd)            | 3.3V to 2V          | -                   |
 | Load Current (Iload)           | 0.5mA to 10mA       | -                   |
-| Reference Voltage (Vref)       | 1.2V                | -                   |
-| Feedback Current (Ifb)         | 20µA                | -                   |
+| Reference Voltage (Vref)       | 1.2V                | 1.2V                |
+| Feedback Current (Ifb)         | 20µA                | 20.11uA             |
 | Unity Gain Bandwidth (UGB)     | ≥ 5MHz              | 5.735MHz            |
 | Phase Margin                   | > 60°               | 63.85°              |
 | Output Voltage Range (Vdd Var) | -                   | 8.55mV              |
