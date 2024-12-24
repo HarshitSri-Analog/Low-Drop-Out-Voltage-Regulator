@@ -12,8 +12,9 @@ This repository contains the design and simulation of a **Low Dropout Voltage Re
   - [Main Issue with NMOS LDO](#main-issue-with-nmos-ldo)
 - [Amplifier in LDO Circuit](#amplifier-in-ldo-circuit)
   - [Specifications](#specifications)
+  - [Designed Specifications of the Balanced Amplifier](#Designed-Specifications-of-the-Balanced-Amplifier)
   - [Advantages of Balanced Amplifier](#advantages-of-balanced-amplifier)
-- [Design Specifications](#design-specifications)
+- [Design Specifications (LDO Regulator)](#design-specifications-(LDO-Regulator))
 - [Acknowledgements](#acknowledgements)
 
 ## Introduction
@@ -62,12 +63,24 @@ The amplifier used in this LDO design is not a conventional operational amplifie
 - **Wide Unity Gain Bandwidth (UGB)**: Facilitates faster response to load and line variations.
 - **Phase Margin**: Designed to ensure stability under all operating conditions.
 
+The detailed design and analysis of the balanced amplifier are provided in the repository under the documentation section [here](https://github.com/HarshitSri-Analog/Low-Drop-Out-Voltage-Regulator/blob/main/Balanced%20Amplifier.pdf). 
+
+### Designed Specifications of the Balanced Amplifier
+| **Parameter**       | **Value**       |
+|---------------------|-----------------|
+| Voltage Gain        | 55 dB          |
+| Unity Gain Bandwidth (UGB) | 13.42 MHz    |
+| Phase Margin        | 69.42 degrees  |
+| Power Consumption   | 0.28 mW        |
+
+This amplifier's performance significantly contributes to the accuracy and stability of the LDO Regulator circuit.
+
 ### Advantages of Balanced Amplifier
 - **Enhanced Stability**: Achieves a better phase margin, minimizing the risk of oscillations.
 - **High Precision**: Maintains tight control over the output voltage despite variations in input voltage or load.
 - **Reduced Noise**: Balanced design helps in achieving low output voltage ripple, suitable for sensitive applications.
 
-## Design Specifications
+## Design Specifications (LDO Regulator)
 
 | **Specification**              | **Given**            | **Achieved**         |
 |---------------------------------|----------------------|----------------------|
