@@ -33,10 +33,6 @@ Voltage regulators are widely used in:
 
 ***Need of an LDO Regulator**: Lets understand this with an example, For suppose you have a Mobile Phone whose battery is fully charged i.e. 100% (say, 5V). Now at the end of the day us being us, we have our mobile phones at 5% (say, 2.3V), but but but... in our devices we have hundreds of different components and each one needs a specific constant voltage (For eg: processor needs 0.5V, display needs 1.2V etc.). Thus for a varying battery input of 5V to 2.3V our components have a demand of a constant/fixed voltage and this demand is fulfulled by our LDO regulators or some other circuits working on the concept of LDO regulator.*
 
-| ![Need of LDO](https://github.com/HarshitSri-Analog/Low-Drop-Out-Voltage-Regulator/blob/main/Schematics%20%26%20Simulation/IMG_20241225_012316.jpg) | 
-| :---: | 
-| Fig 1: Need of LDO Voltage Regulator |
-
 LDOs are particularly advantageous in low-noise, compact, and energy-sensitive applications due to their simplicity and high-performance characteristics.
 
 ## PMOS LDO v/s NMOS LDO
@@ -51,14 +47,14 @@ In a PMOS-based LDO regulator, a PMOS transistor serves as the pass element. The
 
 | ![PMOS LDO](https://github.com/HarshitSri-Analog/Low-Drop-Out-Voltage-Regulator/blob/main/Schematics%20%26%20Simulation/PMOS%20LDO%20ckt.png) | 
 | :---: | 
-| Fig 2: PMOS-LDO Regulator |
+| Fig 1: PMOS-LDO Regulator |
 
 ### NMOS LDO
 An NMOS-based LDO regulator uses an NMOS transistor as the pass element. However, unlike the PMOS design, NMOS transistors require a higher gate drive voltage to maintain conduction. This often necessitates the use of a charge pump or an additional circuit to boost the gate voltage, increasing complexity and power consumption.
 
 | ![NMOS LDO](https://github.com/HarshitSri-Analog/Low-Drop-Out-Voltage-Regulator/blob/main/Schematics%20%26%20Simulation/images.jpeg) | 
 | :---: | 
-| Fig 3: NMOS-LDO Regulator |
+| Fig 2: NMOS-LDO Regulator |
 
 #### Main Issue with NMOS LDO
 The primary drawback of NMOS LDOs is the need for a higher gate drive voltage, which can result in:
